@@ -1,0 +1,64 @@
+/* CSS for Booking Form */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.form__title {
+    text-align: center;
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form__group {
+    margin: 15px 0;
+}
+
+.form__group label {
+    font-weight: bold;
+    color: #333;
+}
+
+.form__group input,
+.form__group select,
+.form__group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+.form__group select {
+    background: #f9f9f9;
+}
+
+.form__group textarea {
+    min-height: 120px;
+}
+
+.form__group select:focus,
+.form__group textarea:focus,
+.form__group input:focus {
+    outline: none;
+    border: 2px solid #ff6347;
+}
+
+button[type="submit"] {
+    display: block;
+    width: 100%;
+    padding: 12px;
+    background-color: #ff6347;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 18px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+button[type="submit"]:hover {
+    background-color: #e54733; /* Slightly darker shade on hover */
+}

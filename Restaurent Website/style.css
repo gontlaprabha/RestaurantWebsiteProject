@@ -1,0 +1,211 @@
+/* Reset some default browser styles */
+
+.carousel-image{
+    height: 500px;
+}
+
+.image{
+    margin-right: auto;
+}
+
+
+body, h1, h2, p, ul, li, form {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f7f7f7;
+    color: #333;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+    text-align: center;
+}
+
+header nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+}
+
+header nav ul li {
+    margin: 0 20px;
+}
+
+header nav ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #ffc107;
+}
+
+/* Section Styles */
+.section {
+    padding: 50px 0;
+    text-align: center;
+}
+
+.section h1, .section h2 {
+    margin-bottom: 20px;
+    font-weight: bold;
+    color: #333;
+}
+
+.section p {
+    font-size: 18px;
+    color: #777;
+}
+
+#home {
+    background-image: url('home-bg.jpg');
+    background-size: cover;
+    color: #fff;
+    padding: 100px 0;
+    text-align: center;
+}
+
+#menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    font-weight: bold;
+}
+
+#menu ul li {
+    margin: 10px;
+    padding: 10px;
+    border: 1px solid #333;
+    background-color: #fff;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+}
+
+#menu ul li:hover {
+    transform: translateY(-5px);
+}
+
+#about {
+    background-color: #fff;
+}
+
+.contact-button {
+    background-color:#ef5656; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.contact-button:hover {
+    background-color: #333; 
+}
+
+
+#book {
+    background-color: #333;
+    color: #fff;
+    padding: 50px 0;
+}
+
+#book h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+
+#book form {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+#book form label {
+    font-weight: bold;
+    margin-right: 10px;
+    color: #ffc107;
+    font-size: 18px;
+}
+
+#book form input[type="text"],
+#book form input[type="email"],
+#book form input[type="date"],
+#book form input[type="time"],
+#book form button {
+    padding: 10px;
+    margin: 10px;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+}
+
+#book form button {
+    background-color: #ffc107;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+#book form button:hover {
+    background-color: #333;
+    color: #ffc107;
+}
+
+#book form input[type="text"],
+#book form input[type="email"],
+#book form input[type="date"],
+#book form input[type="time"] {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #777;
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #333;
+    color: #fff;
+}
+
+#book form input[type="text"]:focus,
+#book form input[type="email"]:focus,
+#book form input[type="date"]:focus,
+#book form input[type="time"]:focus {
+    border-color: #ffc107;
+    outline: none;
+}
+
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 20px 0;
+}
+    .social-links {
+        display: flex; /* Display icons horizontally */
+        gap: 10px; /* Add spacing between icons */
+    }
+
+    .social-links a {
+        text-decoration: none; /* Remove underline from links */
+        color: #333; /* Set icon color */
+        font-size: 24px; /* Set icon size */
+        transition: color 0.3s; /* Add a color transition effect */
+    }
+
+    .social-links a:hover {
+        color: #007BFF; /* Change color on hover */
+    }
+    
+  

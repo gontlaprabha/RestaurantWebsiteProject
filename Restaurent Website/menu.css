@@ -1,0 +1,275 @@
+/* CSS for menu items */
+.menu-item__name {
+    font-weight: bold;
+    color: #333;
+}
+
+.menu-item__price {
+    float: right;
+    color: #555;
+}
+
+.menu-item__rating {
+    color: #ff6347;
+}
+
+.star {
+    font-size: 20px;
+    margin-right: 5px;
+    color: #ff6347;
+}
+
+/* Style stars to appear gold */
+.star {
+    color: gold;
+}
+
+/* Add hover effect to stars */
+.star:hover {
+    transform: scale(1.2);
+}
+
+/* Optional: Style list items and categories */
+.menu__category h4 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    color: #ff6347;
+}
+
+.menu__category ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.menu__category li {
+    font-size: 16px;
+    color: #555;
+    margin-bottom: 5px;
+}
+
+/* Optional: Add a border or divider between menu categories */
+.menu__category + .menu__category {
+    border-top: 1px solid #ccc;
+    padding-top: 20px;
+}
+/* Add these styles to your existing CSS file or a new one */
+/* Style for the shopping cart section */
+#shopping-cart {
+    background-color: #f7f7f7;
+    padding: 20px;
+    border: 1px solid #ddd;
+}
+
+.cart-title {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.cart-table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.cart-table th, .cart-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+}
+
+.cart-table th {
+    background-color: #f3f3f3;
+}
+
+.cart-list {
+    border-top: none;
+}
+
+.cart-summary {
+    margin-top: 20px;
+    text-align: right;
+}
+
+.cart-total {
+    font-weight: bold;
+}
+
+.checkout-button {
+    background-color: #ff5722;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.checkout-button:hover {
+    background-color: #f44336;
+}
+
+/* Add your CSS styles for the delivery address page here */
+
+#food-delivery-address {
+    text-align: center;
+    padding: 20px;
+}
+
+.delivery-title {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+}
+
+.form-container {
+    background-color: #f5f5f5;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    text-align: left;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    display: block;
+    font-weight: bold;
+    color: #555;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #444;
+}
+
+textarea {
+    height: 100px;
+}
+
+.submit-button {
+    background-color: #FF6347;
+    color: #fff;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: 18px;
+    transition: background-color 0.3s;
+}
+
+.submit-button:hover {
+    background-color: #FF4500;
+}
+
+/* Responsive styles for smaller screens */
+@media (max-width: 768px) {
+    .form-group {
+        text-align: center;
+    }
+
+    input[type="text"],
+    textarea {
+        width: 100%;
+    }
+
+    .submit-button {
+        width: 100%;
+    }
+}
+/* Add your existing styles here */
+
+/* Popup styles */
+.popup-container {
+    display: none;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    padding: 20px;
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    text-align: center;
+}
+
+.close-popup {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+}
+/* Add your existing styles here */
+
+/* Scooty animation */
+@keyframes scootyAnimation {
+    0% {
+        transform: translateX(-100%);
+        opacity: 0;
+    }
+    20% {
+        transform: translateX(0);
+        opacity: 1;
+    }
+    80% {
+        opacity: 1;
+    }
+    100% {
+        transform: translateX(100%);
+        opacity: 0;
+    }
+}
+
+/* Delivery status bar styles */
+/* Additional styling for the search box */
+#search-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#search-input {
+    width: 250px;
+    padding: 12px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    color: #333;
+    transition: border-color 0.3s;
+}
+
+#search-input:focus {
+    border-color: #ff6347;
+}
+
+#reset-search {
+    padding: 10px;
+    border: none;
+    background-color: #333;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#reset-search:hover {
+    background-color: #555;
+}

@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/restro logo.png">
+    <link rel="stylesheet" href="booking.css">
+    <header>
+      <nav style="display: flex;">
+        <img src="images/restro logo.png" width="120px"height="120px">
+        <ul style="margin-left: auto;">
+              <li><a href="index.html">Home</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="contact.html">Contact</a></li>
+              <li><a href="booking.html">Book a Table</a></li>
+          </ul>
+      </nav>
+  </header>
+    <style>
+      body {
+            font-family: Arial, sans-serif;
+            background-color: #f5f5f5;
+            margin: 0;
+            padding: 0;
+        }
+
+        .container {
+            text-align: center;
+            background-color: #fff;
+            padding: 20px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            max-width: 400px;
+            margin: 0 auto;
+        }
+
+        .form__title {
+            font-size: 24px;
+            margin-bottom: 20px;
+            color: #ff6347;
+        }
+
+        .form__group {
+            margin: 10px 0;
+            display: flex;
+            flex-direction: column;
+            align-items: flex-start;
+        }
+
+        .form__group label {
+            margin-bottom: 5px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .form__group input,
+        .form__group select, 
+        .form__group textarea {
+            width: 90%;
+            padding: 12px;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            font-size: 16px;
+            background-color: #f9f9f9;
+        }
+
+        .form__group textarea {
+            min-height: 120px;
+        }
+
+        .form__group select:focus,
+        .form__group textarea:focus,
+        .form__group input:focus {
+            outline: none;
+            border: 2px solid #ff6347;
+        }
+
+        button[type="submit"] {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: #ff6347;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            font-size: 18px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, color 0.3s ease;
+        }
+
+        button[type="submit"]:hover {
+            background-color: #e54733;
+        }
+
+        .footer {
+            text-align: center;
+            padding: 20px;
+        }
+
+        .footer p {
+            color: #777;
+        }
+
+    </style>
+    <script>
+        function submitForm() {
+            // Get form elements
+            const firstName = document.getElementById("firstName");
+            const lastName = document.getElementById("lastName");
+            const email = document.getElementById("email");
+            const tableType = document.getElementById("tableType");
+            const guestNumber = document.getElementById("guestNumber");
+            const placement = document.getElementById("placement");
+            const date = document.getElementById("date");
+            const time = document.getElementById("time");
+
+            // Validate the form fields
+            if (
+                firstName.value.trim() === "" ||
+                lastName.value.trim() === "" ||
+                email.value.trim() === "" ||
+                tableType.value === "Choose" ||
+                guestNumber.value === "" ||
+                placement.value === "Choose" ||
+                date.value.trim() === "" ||
+                time.value.trim() === ""
+            ) {
+                alert("Please fill in all the required details.");
+                return false;
+            }
+
+            // Redirect to the payment portal page
+            window.location.href = "payment.html";
+        } 
+    </script>
+</head>
+<body>
+  <br><br>
+<section id="form" data-aos="fade-up">
+    <div class="container">
+        <h3 class="form__title">Book a Table</h3>
+        <div class="form__wrapper">
+            <form name="booking" method="POST" netlify onsubmit="event.preventDefault(); submitForm();">
+                <div class="form__group">
+                    <label for="firstName">First Name</label>
+                    <input type="text" id="firstName" name="First Name" required>
+                </div>
+                <div class="form__group">
+                    <label for="lastName">Last Name</label>
+                    <input type="text" id="lastName" name= "Last Name" required>
+                </div>
+                <div class="form__group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="Email" required>
+                </div>
+                <div class="form__group">
+                    <label for="tableType">Table Type</label>
+                    <select name="Table Type" id="tableType" required>
+                        <option selected disabled>Choose</option>
+                        <option value="small">Small (2 persons)</option>
+                        <option value="medium">Medium (4 persons)</option>
+                        <option value="large">Large (6 persons)</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label for="guestNumber">Guest Number</label>
+                    <input type="number" id="guestNumber" name="Guest Number" min="1" max="10" required>
+                </div>
+                <div class="form__group">
+                    <label for="placement">Placement</label>
+                    <select name="Placement" id="placement" required>
+                        <option selected disabled>Choose</option>
+                        <option value="outdoor">Outdoor</option>
+                        <option value="indoor">Indoor</option>
+                        <option value="rooftop">Rooftop</option>
+                    </select>
+                </div>
+                <div class="form__group">
+                    <label for="date">Date</label>
+                    <input type="date" id="date" name="Date" required>
+                </div>
+                <div class="form__group">
+                    <label for="time">Time</label>
+                    <input type="time" id="time" name="Time" required>
+                </div>
+                <div class="form__group">
+                    <label for="note">Note (Optional)</label>
+                    <textarea name="Note" id="note" rows="4"></textarea>
+                </div>
+                <button type="submit">Book Table</button>
+            </form>
+            <p><strong>Instructions:</strong> Please fill in the required details to book a table at our restaurant. Your reservation is subject to availability, and you will be redirected to the payment portal after submitting this form.</p>
+        </div>
+    </div>
+</section>
+<br>
+<footer>
+    <p>&copy; Spicy Kingdom</p>
+    </footer>
+</footer>
+</body>
+</html>

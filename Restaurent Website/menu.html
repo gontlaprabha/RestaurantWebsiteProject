@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu - Spicy Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="images/restaurant_logo.png">
+    <link rel="icon" href="images/restro logo.png">
+    <script src="cart.js"></script> 
+</head>
+<body>
+    <header>
+        <nav style="display: flex;">
+            <img class="image" src="images/restro logo.png" width="120px" height="120px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html">Book a Table</a></li>
+                <div class="mode-switch">
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <div class="search-container">
+        <input type="text" id="search-input" placeholder="Search...">
+        <button onclick="resetMenu()" id="reset-search">Reset</button>
+    </div>
+    <section id="menu" data-aos="fade-up">
+        <div class="container">
+            <h3 class="menu__title">Our Menu</h3>
+            <div class="menu__category">
+                <h4>Appetizers</h4>
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <img src="images/samosa.jpg" height="150px" width="150px"><br>
+                            <span class="menu-item__name">Vegetable Samosa</span>
+                            <span class="menu-item__price">50Rs</span>
+                            <div class="menu-item__rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <button class="add-to-cart" data-name="Vegetable Samosa" data-price="50">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <img src="images/panner tikka.jpg" height="150px" width="150px"><br>
+                            <span class="menu-item__name">Paneer Tikka</span>
+                            <span class="menu-item__price">200Rs</span>
+                            <div class="menu-item__rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9734;</span>
+                                <button class="add-to-cart" data-name="Paneer Tikka" data-price="200">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Add more items here -->
+                </ul>
+            </div>
+            <div class="menu__category">
+                <h4>Main Courses</h4>
+                <ul>
+                    <li>
+                        <div class="menu-item">
+                            <img src="images/butter-chicken.jpg" height="150px" width="150px"><br>
+                            <span class="menu-item__name">Butter Chicken</span>
+                            <span class="menu-item__price">400Rs</span>
+                            <div class="menu-item__rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <button class="add-to-cart" data-name="Butter Chicken" data-price="400">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <img src="images/prawn curry.jpg" height="150px" width="150px"><br>
+                            <span class="menu-item__name">Prawn Curry</span>
+                            <span class="menu-item__price">350Rs</span>
+                            <div class="menu-item__rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <button class="add-to-cart" data-name="Prawn Curry" data-price="350">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <img src="images/chicken-hyderabadi-biryani-01.jpg" height="150px" width="150px"><br>
+                            <span class="menu-item__name">Chicken Biryani</span>
+                            <span class="menu-item__price">350Rs</span>
+                            <div class="menu-item__rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9734;</span>
+                                <button class="add-to-cart" data-name="Chicken Biryani" data-price="350">Add to Cart</button>
+                            </div>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="menu-item">
+                            <img src="images/palak-paneer.jpg" height="150px" width="150px"><br>
+                            <span class="menu-item__name">Palak Paneer</span>
+                            <span class="menu-item__price">150Rs</span>
+                            <div class="menu-item__rating">
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9733;</span>
+                                <span class="star">&#9734;</span>
+                                <button class="add-to-cart" data-name="Palak Paneer" data-price="150">Add to Cart</button>
+                            </div>
+                            
+                        </div>
+                    </li>
+                </ul>
+                <hr>
+                <div class="menu__category">
+                    <h4>Desserts</h4>
+                    <ul>
+                        <li>
+                            <div class="menu-item">
+                                <img src="images/chocolate-cake.jpeg" height="150px" width="150px"><br>
+                                <span class="menu-item__name">Chocolate Cake</span>
+                                <span class="menu-item__price">120Rs</span>
+                                <div class="menu-item__rating">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                    <button class="add-to-cart" data-name="Chocolate Cake" data-price="120">Add to Cart</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <img src="images/strawberry-cheesecake.jpg" height="150px" width="150px"><br>
+                                <span class="menu-item__name">Strawberry Cheesecake</span>
+                                <span class="menu-item__price">150Rs</span>
+                                <div class="menu-item__rating">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <button class="add-to-cart" data-name="Strawberry Cheesecake" data-price="150">Add to Cart</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <img src="images/ice-cream.jpeg" height="150px" width="150px"><br>
+                                <span class="menu-item__name">Vanilla Ice Cream</span>
+                                <span class="menu-item__price">80Rs</span>
+                                <div class="menu-item__rating">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                    <span class="star">&#9734;</span>
+                                    <button class="add-to-cart" data-name="Vanilla Ice Cream" data-price="80">Add to Cart</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <img src="images/tiramisu.jpeg" height="150px" width="150px"><br>
+                                <span class="menu-item__name">Tiramisu</span>
+                                <span class="menu-item__price">180Rs</span>
+                                <div class="menu-item__rating">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <button class="add-to-cart" data-name="Tiramisu" data-price="180">Add to Cart</button>
+                                </div>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="menu-item">
+                                <img src="images/fruit-salad.jpeg" height="150px" width="150px"><br>
+                                <span class="menu-item__name">Fresh Fruit Salad</span>
+                                <span class="menu-item__price">100Rs</span>
+                                <div class="menu-item__rating">
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9733;</span>
+                                    <span class="star">&#9734;</span>
+                                    <span class="star">&#9734;</span>
+                                    <button class="add-to-cart" data-name="Fresh Fruit Salad" data-price="100">Add to Cart</button>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                
+            </div>
+    </section>
+    <hr>
+    <section id="shopping-cart">
+        <h3 class="cart-title">Your Food Box</h3>
+        <form id="cart-form">
+            <table class="cart-table">
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Price</th>
+                        <th>Quantity</th>
+                        <th>Total</th>
+                        <th>Action</th>
+                    </tr>
+                </thead>
+                <tbody id="cart-items" class="cart-list">
+                    <!-- Cart items will be displayed here -->
+                </tbody>
+            </table>
+        </form>
+        <div class="cart-summary">
+            <p class="cart-total">Total: <span id="cart-total">0Rs</span></p>
+         <a href="menuaddress.html"><button id="checkout" class="checkout-button">Proceed to Checkout</button></a>
+        </div>
+    </section>
+    
+    
+    <footer>
+        <p>&copy; Spicy Kingdom</p>
+    </footer>
+    
+</body>
+</html>

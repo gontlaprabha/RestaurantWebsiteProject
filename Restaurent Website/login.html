@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/restro logo.png">
+    <link rel="stylesheet" href="login.css">
+    <link rel="icon" href="images/restaurant_logo.png">
+</head>
+<body>
+    <header>
+        <nav>
+            <img class="image" src="images/restro logo.png" width="120px" height="120px">
+            <ul>
+                <li><a href="login.html">Login</a></li>
+                <li><a href="register.html">Register</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="login-section">
+        <div id="login-form">
+            <h2>Login</h2>
+            <form>
+                <input type="text" placeholder="Username" id="login-username">
+                <div class="password-toggle">
+                    <input type="password" placeholder="Password" id="login-password">
+                    <button type="button" onclick="togglePassword()">Show</button>
+                </div>
+                <button type="button" onclick="login()">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div id="success-message">
+        <p>Logged in successfully!</p>
+    </div>
+
+    <script>
+        function login() {
+            const loginUsername = document.getElementById("login-username").value;
+            const loginPassword = document.getElementById("login-password").value;
+    
+            // Check if the username and password match a stored user
+            const userData = JSON.parse(localStorage.getItem(loginUsername));
+    
+            if (userData && userData.password === loginPassword) {
+                // Redirect to the next page after successful login
+                window.location.href = "index.html"; // Replace "next-page.html" with the actual page you want to redirect to
+            } else {
+                alert("Invalid username or password.");
+            }
+        }
+
+        function togglePassword() {
+            const passwordInput = document.getElementById("login-password");
+            const toggleButton = document.querySelector(".password-toggle button");
+
+            if (passwordInput.type === "password") {
+                passwordInput.type = "text";
+                toggleButton.textContent = "Hide";
+            } else {
+                passwordInput.type = "password";
+                toggleButton.textContent = "Show";
+            }
+        }
+    </script>
+</body>
+</html>

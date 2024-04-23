@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spicy Kingdom</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="images/restro logo.png">
+    <script src="index.js"></script>
+    <script async defer
+        src="https://maps.googleapis.com/maps/api/js?key=your-api-key&callback=initMap">
+</script>
+
+
+    <style>
+        body, h1, h2, p, ul, li {
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+        }
+
+        /* Section Styles */
+        .section {
+            background-color: #fff;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+            border-radius: 5px;
+            margin: 20px;
+        }
+
+        .section h2 {
+            margin-bottom: 20px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .section p {
+            font-size: 18px;
+            color: #777;
+        }
+
+        .section img {
+            max-width: 100%;
+            display: block;
+            margin: 0 auto;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            flex-wrap: wrap;
+            justify-content: space-around;
+        }
+
+        .about-content {
+            display: flex;
+            text-align: left;
+            border: 2px solid black;
+            margin-bottom: 20px;
+        }
+
+        .about-content img {
+            min-width: 50%;
+        }
+
+        .about-text {
+            text-align: left;
+            padding: 10px;
+            align-self: center;
+        }
+        
+    .testimonial {
+        border: 1px solid #ccc;
+        border-radius: 10px;
+        padding: 20px;
+        margin: 20px;
+        background-color: #f7f7f7;
+    }
+
+    .stars {
+        color: #ffc107; /* Color for stars */
+    }
+
+    .testimonial p {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .testimonial strong {
+        font-weight: bold;
+    }
+    
+</style>
+</head>
+<body>
+    <header>
+        <nav style="display: flex;">
+            <img class="image" src="images/restro logo.png" width="120px" height="120px">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="menu.html">Menu</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href="booking.html">Book a Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <section id="about" class="section">
+        <h2>About Us</h2>
+        <div class="content-container">
+            <div class="about-content">
+                <img src="images/Resturant front.jpg" alt="Restaurant Interior">
+                <div class="about-text">
+                    <p>Welcome to Spicy Kingdom, where extraordinary flavors, culinary artistry, and rich traditions come together. We are more than just a restaurant; we are a celebration of taste, culture, and community.</p>
+                    <p>We food enthusiasts with a passion for exceptional dining experiences, embarked on a journey to create something unique. They traveled across continents, collecting age-old recipes and spices, which became the cornerstone of Spicy Kingdom's menu. Over the years, our restaurant has evolved into a culinary haven where the world's best flavors are masterfully combined.</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <img src="images/Head_chef.jpg" alt="Head Chef Maria">
+                <div class="about-text">
+                    <p>At Spicy Kingdom, we believe that each dish is a piece of art. Our culinary team, led by our head chef, Maria, meticulously crafts every plate. We take pride in using the finest, locally sourced ingredients and a secret blend of spices that have been passed down through generations. Our menu offers a delectable journey through diverse cuisines, from mouthwatering Indian curries to sizzling Mexican fajitas, ensuring a unique experience every visit.</p>
+                </div>
+            </div>
+            <div class="about-content">
+                <img src="images/chef_staff.jpeg" alt="Restaurant Staff">
+                <div class="about-text">
+                    <p>When you step into Spicy Kingdom, you're not just dining; you're entering a realm of elegance and warmth. Our restaurant's interior is a fusion of modern sophistication and traditional charm. Our staff, known for their warm hospitality, goes the extra mile to ensure you feel like a cherished guest every time you visit. Whether it's a romantic dinner, a family celebration, or a casual get-together, we provide the perfect backdrop for your special moments.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h2>Reviews</h2>
+    <div class="testimonial">
+        <div class="stars">
+            ★★★★★
+        </div>
+        <p>"I've traveled the world, and I've never tasted Indian cuisine like this. Spicy Kingdom takes you on a culinary journey you won't forget!"</p>
+        <p><strong>Vikram</strong></p>
+    </div>
+    <div class="testimonial">
+        <div class="stars">
+            ★★★★☆
+        </div>
+        <p>"The food at Spicy Kingdom is an explosion of flavors. It's like a party in your mouth! I keep coming back for more."</p>
+        <p><strong>Prabhas</strong></p>
+    </div>
+    <div class="testimonial">
+        <div class="stars">
+            ★★★★★
+        </div>
+        <p>"The ambiance at Spicy Kingdom is magical. It's the perfect place for a special celebration. The staff makes you feel like royalty!"</p>
+        <p><strong>Aditya</strong></p>
+    </div>
+    <div class="testimonial">
+        <div class="stars">
+            ★★★★☆
+        </div>
+        <p>"I'm a vegetarian, and Spicy Kingdom's menu offers so many delicious veggie options. The vegetarian curry is a must-try!"</p>
+        <p><strong>Karan</strong></p>
+    </div>
+    <footer>
+        <p>&copy; Spicy Kingdom</p>
+    </footer>
+</body>
+</html>

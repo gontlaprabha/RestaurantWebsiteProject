@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Payment Portal</title>
+    <link rel="stylesheet" href="payment.css">
+    <link rel="icon" href="images/restro logo.png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <img src="images/restro logo.png" height="120px"w-120>
+                <li><a href="index.html" onclick="return confirmNavigation()">Home</a></li>
+                <li><a href="menu.html"onclick="return confirmNavigation()">Menu</a></li> 
+                <li><a href="about.html"onclick="return confirmNavigation()">About</a></li>
+                <li><a href="contact.html"onclick="return confirmNavigation()">Contact</a></li>
+                <li><a href="booking.html"onclick="return confirmNavigation()">Book a Table</a></li>
+            </ul>
+        </nav>
+    </header>
+    <br><br>
+    <section class="payment-form">
+        <h2>Make a Payment</h2>
+        <form method="POST" action="process_payment.php">
+            <div class="form-group">
+                <label for="card-number">Card Number</label>
+                <input type="text" id="card-number" name="card-number" required>
+            </div>
+            <div class="form-group">
+                <label for="expiry-date">Expiry Date</label>
+                <input type="text" id="expiry-date" name="expiry-date" required>
+            </div>
+            <div class="form-group">
+                <label for="cvc">CVC</label>
+                <input type="text" id="cvc" name="cvc" required>
+            </div>
+            <div class="form-group">
+                <label for="amount">Amount</label>
+                <input type="text" id="amount" name="amount" required>
+            </div>
+            <br>
+            <button type="submit">Pay Now</button>
+        </form>
+    </section>
+    <br><br><br><br><br>
+    <footer>
+        <p>&copy; Spicy Kingdom</p>
+    </footer>
+    <script>
+        function confirmNavigation() {
+            return confirm("You want to leave payment portal ?");
+        }
+    </script>
+    
+</body>
+</html>
